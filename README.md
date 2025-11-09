@@ -1,7 +1,5 @@
 # Sistema Especialista: Streaming & Assinaturas
 
-Desenvolvido por: @Guilherme Stein e @Samuel Wiggers 
-
 Este é um sistema especialista desenvolvido em Prolog para calcular o valor proporcional de cobranças em mudanças de planos de streaming, utilizando cálculos pro-rata baseados nos dias utilizados de cada plano.
 
 ## Pré-requisitos
@@ -104,4 +102,5 @@ O sistema implementa as seguintes regras principais:
 
 ## Desenvolvedor
 
-- Guilherme Sgrott
+- Guilherme Sgrott 
+- Samuel Wiggers 
