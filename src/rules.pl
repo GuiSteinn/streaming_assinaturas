@@ -1,9 +1,11 @@
 :- dynamic obs/1.
 
-% 1) Mesmo plano: não cobrar nada
+% 1) Mesmo plano: não cobrar nada (apenas se dias usados = 0)
 meta(resultado(plano_atual(A), plano_novo(A), valor_cobrado(0.0))) :-
     obs(plano_atual(A)),
-    obs(plano_novo(A)).
+    obs(plano_novo(A)),
+    obs(dias_usados(Dias)),
+    Dias =:= 0.
 
 % 2) Troca no dia 0: cobrar o mes completo do novo plano
 meta(resultado(plano_atual(_A), plano_novo(N), valor_cobrado(VFinal))) :-
